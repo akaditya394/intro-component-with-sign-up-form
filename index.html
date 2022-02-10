@@ -143,26 +143,60 @@
 
     <script type="text/javascript">
       const inputBox = document.querySelectorAll("input");
-      console.log(inputBox);
-
-      console.log(inputBox[1].value);
-
       const Button = document.querySelector("button");
       Button.addEventListener("click", errorDetection);
+
+      let error1 = document.createElement("img");
+      error1.src = "../images/icon-error.svg";
+      error1.style.position = "absolute";
+      error1.style.right = "4px";
+      error1.style.marginTop = "6px";
+
+      let error2 = document.createElement("img");
+      error2.src = "../images/icon-error.svg";
+      error2.style.position = "absolute";
+      error2.style.right = "4px";
+      error2.style.marginTop = "6px";
+
+      let error3 = document.createElement("img");
+      error3.src = "../images/icon-error.svg";
+      error3.style.position = "absolute";
+      error3.style.right = "4px";
+      error3.style.marginTop = "6px";
+
+      let error4 = document.createElement("img");
+      error4.src = "../images/icon-error.svg";
+      error4.style.position = "absolute";
+      error4.style.right = "4px";
+      error4.style.marginTop = "6px";
+      let inputDiv = document.querySelectorAll(".input-group");
 
       function errorDetection(event) {
         event.preventDefault();
         if (inputBox[0].value.trim().length === 0) {
+          console.log(inputDiv);
+          inputDiv[0].appendChild(error1);
           inputBox[0].style.border = "2px solid red";
+          let error_message_1 = "First name cannot be empty";
+          inputBox[0].placeholder = error_message_1;
         }
         if (inputBox[1].value.trim().length === 0) {
+          inputDiv[1].appendChild(error2);
           inputBox[1].style.border = "2px solid red";
+          let error_message_2 = "Last Name cannot be empty";
+          inputBox[1].placeholder = error_message_2;
         }
         if (inputBox[2].value.trim().length === 0) {
+          inputDiv[2].appendChild(error3);
           inputBox[2].style.border = "2px solid red";
+          let error_message_3 = "Email cannot be empty";
+          inputBox[2].placeholder = error_message_3;
         }
         if (inputBox[3].value.trim().length === 0) {
+          inputDiv[3].appendChild(error4);
           inputBox[3].style.border = "2px solid red";
+          let error_message_4 = "Password cannot be empty";
+          inputBox[3].placeholder = error_message_4;
         }
       }
     </script>
