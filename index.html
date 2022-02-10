@@ -115,9 +115,15 @@
               CLAIM YOUR FREE TRIAL
             </button>
             <div class="bottom-text">
-              <span style="font-size: 14px"
+              <span style="font-size: 14px; font-weight: 500"
                 >By clicking the button, you are agreeing to our</span
-              ><span style="font-size: 14px; color: hsl(0, 100%, 74%)">
+              ><span
+                style="
+                  font-weight: 500;
+                  font-size: 14px;
+                  color: hsl(0, 100%, 74%);
+                "
+              >
                 Terms and Services</span
               >
             </div>
@@ -134,5 +140,31 @@
         >. Coded by <a href="https://github.com/akaditya394">Aditya Kumar</a>.
       </p>
     </footer>
+
+    <script type="text/javascript">
+      const inputBox = document.querySelectorAll("input");
+      console.log(inputBox);
+
+      console.log(inputBox[1].value);
+
+      const Button = document.querySelector("button");
+      Button.addEventListener("click", errorDetection);
+
+      function errorDetection(event) {
+        event.preventDefault();
+        if (inputBox[0].value.trim().length === 0) {
+          inputBox[0].style.border = "2px solid red";
+        }
+        if (inputBox[1].value.trim().length === 0) {
+          inputBox[1].style.border = "2px solid red";
+        }
+        if (inputBox[2].value.trim().length === 0) {
+          inputBox[2].style.border = "2px solid red";
+        }
+        if (inputBox[3].value.trim().length === 0) {
+          inputBox[3].style.border = "2px solid red";
+        }
+      }
+    </script>
   </body>
 </html>
