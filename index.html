@@ -192,6 +192,13 @@
           let error_message_3 = "Email cannot be empty";
           inputBox[2].placeholder = error_message_3;
         }
+
+        if (!inputBox[2].value.includes("@")) {
+          inputDiv[2].appendChild(error3);
+          inputBox[2].style.border = "2px solid red";
+          let error_message_email = "Enter valid email";
+          inputBox[2].placeholder = error_message_email;
+        }
         if (inputBox[3].value.trim().length === 0) {
           inputDiv[3].appendChild(error4);
           inputBox[3].style.border = "2px solid red";
