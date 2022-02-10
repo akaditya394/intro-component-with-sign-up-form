@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .flexbox-container {
@@ -23,6 +24,10 @@ body {
   height: 600px;
   width: 600px;
   background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
 }
 
 .right {
