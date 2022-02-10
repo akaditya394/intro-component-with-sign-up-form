@@ -94,6 +94,7 @@ body {
 
 input {
   width: 80%;
+  font-weight: 500 !important;
 }
 
 .form-input {
