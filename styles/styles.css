@@ -114,4 +114,25 @@ input {
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
 }
+
+@media (max-width: 768px) {
+  .left {
+    width: 60%;
+    text-align: center;
+    margin: 0;
+  }
+  p {
+    margin: 0 !important;
+  }
+  .right {
+    width: 60%;
+  }
+  .form-input {
+    width: 80%;
+  }
+  .input-group {
+    position: relative !important;
+    width: 80% !important;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
