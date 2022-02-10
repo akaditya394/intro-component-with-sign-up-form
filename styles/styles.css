@@ -76,10 +76,9 @@ body {
 
 .request {
   height: 50px;
-  width: 80%;
+  width: 100%;
   -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
           box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  background-color: blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
